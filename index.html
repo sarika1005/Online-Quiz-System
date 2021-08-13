@@ -1,0 +1,41 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Online Quiz</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+<div class="leftside">
+  <img src="https://i.insider.com/5b21413d1ae6621b008b51a1?width=1000&format=jpeg&auto=webp" alt="quiz logo" class="tilt"/>
+</div>
+<div class="rightside">
+<h1>welcome to online quiz</h1>
+<h2>Instructions:-</h2>
+<ul>
+<li>Total Number of Questions : 10 </li>
+<li>Quiz structure : Logical Reasoning -4 questions, Numerical - 3 questions, English Language - 3 questions</li>
+<li>Time alloted : 60 Seconds</li>
+<li>Once you clicked next button you can't go back to previous page</li>
+<li>Test will be submitted automatically if time got expired</li> 
+<li>Answer you clicked can not be changed after</li> 
+<li>You can end test anytime</li>
+<li>Mark for each right answer : 1</li> 
+<li>No negative marks</li>
+</ul>
+<a href="question.html"> Let's start quiz</a>
+</div>
+</div>
+</body>
+<script type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/tilt.min.js"></script>
+<script>
+   $(".tilt").tilt({
+       scale: 1.2,
+});
+
+</script>
+</html>

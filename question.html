@@ -1,0 +1,68 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Online Quiz</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="box" id="questionscreen">
+<div class="header1">
+<h3>Online Quiz Application</h3>
+<span></span>
+</div>
+<hr>
+<div class="header">
+   <div class="scorebox">Score : <span>0</span></div>
+   <div class="timerbox">Time Left: <span></span></div>
+</div>
+<div class="questionbox"> 
+</div>
+<div class="optionbox">
+   <span onclick="checkAnswer(this)" data-opt="1"></span>
+   <span onclick="checkAnswer(this)" data-opt="2"></span>
+   <span onclick="checkAnswer(this)" data-opt="3"></span>
+   <span onclick="checkAnswer(this)" data-opt="4"></span>
+</div>
+<div class="footer">
+<button onclick="showResult(1)">End Test</button>
+<button onclick="shownext()">Next</button>
+</div>
+</div>
+<div class="box" id="resultscreen" style="display: none;">
+<div class="header1">
+<h3>Online Quiz Result</h3>
+</div>
+<hr>
+<div class="resultbox">
+<label>Total number of Questions</label>
+<span>:</span>
+<span id="totalquestion"></span>
+<label>Attempted questions </label>
+<span>:</span>
+<span id="attemptquestion"></span>
+<label>correct answers</label>
+<span>:</span>
+<span id="correctanswer"></span>
+<label>wrong answers</label>
+<span>:</span>
+<span id="wronganswer"></span>
+
+
+</div>
+<div class="buttonbox">
+
+<a href="online.html">Start again</a>
+</div>
+</div>
+
+</body>
+
+
+<script type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="quiz.js"></script>
+<script src="script.js"></script>
+
+</html>
